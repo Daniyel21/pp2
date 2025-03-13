@@ -15,11 +15,10 @@ player_y = 450
 
 
 limit_left, limit_right,limit_up, limit_down = 30, 560,30, 570
-last_direction = 'down'
 running = True
 while running:
     keys = pygame.key.get_pressed()
-    screen.fill((0,0,0))
+    screen.fill((255,255,255))
     pygame.draw.circle(screen, (255,0,0),(player_x,player_y),25,0)
     
     if keys[pygame.K_LEFT] and player_x >limit_left:
