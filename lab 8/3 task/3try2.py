@@ -88,7 +88,7 @@ while runing:
             if active_index == 0:
                 mouse_x, mouse_y = event.pos
                 for index,i in enumerate(buttonsfor0):
-                    if (mouse_x - i["spawn"][0])*2 + (mouse_y - i["spawn"][1])*2 <= i["radius"] **2:
+                    if (mouse_x - i["spawn"][0])**2 + (mouse_y - i["spawn"][1])**2 <= i["radius"] **2:
                         active_index_for0 = index
 
             if active_index == 1:
@@ -108,7 +108,7 @@ while runing:
                     if buttonfor1.collidepoint(event.pos):
                         active_index_for1 = 3
                         break
-                    if (mouse_x - i["spawn"][0])*2 + (mouse_y - i["spawn"][1])*2 <= i["radius"] **2:
+                    if (mouse_x - i["spawn"][0])**2 + (mouse_y - i["spawn"][1])**2 <= i["radius"] **2:
                         active_index_for1 = index        
 
 
